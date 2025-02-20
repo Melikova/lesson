@@ -20,7 +20,7 @@ jobs:
         run: |
           postman collection run "15043613-dcdd84ac-3914-474e-9038-174d86bf8210" --reporters=cli,json --reporter-json-export=postman-report.json
       - name: Upload report as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: postman-api-test-report
           path: postman-report.json
